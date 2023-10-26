@@ -24,11 +24,7 @@ loadSong(songs[songIndex]);
 function loadSong(song) {
   title.innerText = song;
   audio.src = `music/${song}.mp3`;
-  if(cover.alt === "music-cover") {
-	cover.src = `images/ukulele.jpg`;
-  } else {
-	cover.src = `images/${song}.jpg`;
-  }
+  cover.src = `images/${song}.jpg`;
 }
 
 // Play song
@@ -121,7 +117,7 @@ function DurTime (e) {
 	get_sec (currentTime,sec);
 
 	// change currentTime DOM
-	currtTime.innerHTML = min +':'+ sec;
+	//currTime.innerHTML = min +':'+ sec;
 
 	// define minutes duration
 	let min_d = (isNaN(duration) === true)? '0':
@@ -150,7 +146,7 @@ function DurTime (e) {
 	get_sec_d (duration);
 
 	// change duration DOM
-	durTime.innerHTML = min_d +':'+ sec_d;
+	//durTime.innerHTML = min_d +':'+ sec_d;
 		
 };
 
