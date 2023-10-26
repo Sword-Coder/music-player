@@ -24,7 +24,11 @@ loadSong(songs[songIndex]);
 function loadSong(song) {
   title.innerText = song;
   audio.src = `music/${song}.mp3`;
-  cover.src = `images/${song}.jpg`;
+  if(cover.alt === "music-cover") {
+	cover.src = `images/summer.jpg`;
+  } else {
+	cover.src = `images/${song}.jpg`;
+  }
 }
 
 // Play song
@@ -117,7 +121,7 @@ function DurTime (e) {
 	get_sec (currentTime,sec);
 
 	// change currentTime DOM
-	currTime.innerHTML = min +':'+ sec;
+	currtTime.innerHTML = min +':'+ sec;
 
 	// define minutes duration
 	let min_d = (isNaN(duration) === true)? '0':
