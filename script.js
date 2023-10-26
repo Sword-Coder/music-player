@@ -25,7 +25,7 @@ function loadSong(song) {
   title.innerText = song;
   audio.src = `music/${song}.mp3`;
   if(cover.alt === "music-cover") {
-	cover.src = `images/summer.jpg`;
+	cover.src = `images/ukulele.jpg`;
   } else {
 	cover.src = `images/${song}.jpg`;
   }
