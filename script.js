@@ -12,7 +12,7 @@ const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 
 // Song titles
-const songs = ['summer'];
+const songs = ['hey', 'summer', "My Jesus, I Love Thee", "Amerryheart", "Sneaky-Snitch", "TheFightIsOn", "Leaning On The Everlasting Arms", "Fluffing-a-Duck", "sunshine-hymn-medley", "Jesus Is All The World To Me", "To God Be The Glory", "O Happy Day!", "We Gather Together", "Wonderful Words Of Life"];
 
 // Keep track of song
 let songIndex = 2;
@@ -24,7 +24,11 @@ loadSong(songs[songIndex]);
 function loadSong(song) {
   title.innerText = song;
   audio.src = `music/${song}.mp3`;
-  cover.src = `images/${song}.jpg`;
+  if(cover.alt === "music-cover") {
+	cover.src = `images/summer.jpg`;
+  } else {
+	cover.src = `images/${song}.jpg`;
+  }
 }
 
 // Play song
@@ -117,7 +121,7 @@ function DurTime (e) {
 	get_sec (currentTime,sec);
 
 	// change currentTime DOM
-	currTime.innerHTML = min +':'+ sec;
+	currtTime.innerHTML = min +':'+ sec;
 
 	// define minutes duration
 	let min_d = (isNaN(duration) === true)? '0':
