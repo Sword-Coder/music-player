@@ -12,7 +12,7 @@ const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 
 // Song titles
-const songs = ['hey', 'summer', 'ukulele', "Amerryheart"];
+const songs = ['hey', 'summer', "My Jesus, I Love Thee", "Amerryheart", "Sneaky-Snitch", "TheFightIsOn", "Leaning On The Everlasting Arms", "Fluffing-a-Duck", "sunshine-hymn-medley", "Jesus Is All The World To Me", "To God Be The Glory", "O Happy Day!", "We Gather Together", "Wonderful Words Of Life"];
 
 // Keep track of song
 let songIndex = 2;
