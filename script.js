@@ -13,7 +13,7 @@ const durTime = document.querySelector('#durTime');
 
 // Song titles
 const songs = ['summer', "My Jesus, I Love Thee", "Amerryheart", "Sneaky-Snitch", "TheFightIsOn", "Leaning On The Everlasting Arms", "Fluffing-a-Duck", "Jesus Is All The World To Me", "To God Be The Glory", "We Gather Together", "Wonderful Words Of Life"];
-
+                                             
 // Keep track of song
 let songIndex = 2;
 
@@ -48,7 +48,7 @@ function pauseSong() {
 // Previous song
 function prevSong() {
   songIndex--;
-
+	console.log(songIndex--)
   if (songIndex < 0) {
     songIndex = songs.length - 1;
   }
